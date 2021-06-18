@@ -27,7 +27,9 @@ The software for the UVC_Disinfecting_Robot project was developped with ROS Melo
 * The [navigation stack](https://wiki.ros.org/navigation),
 * The freenect package (for connecting to the Kinect)
 * [RViz](http://wiki.ros.org/rviz)
-* [TF](http://wiki.ros.org/tf), [Joint State](http://wiki.ros.org/joint_state_publisher) and [Robot State](http://wiki.ros.org/robot_state_publisher) Publishers
+* [TF Publisher](http://wiki.ros.org/tf) 
+* [Joint State Publisher](http://wiki.ros.org/joint_state_publisher) 
+* [Robot State Publisher](http://wiki.ros.org/robot_state_publisher) 
 * [ROSSerial package](http://wiki.ros.org/rosserial) (for connecting to the Arduino Mega)
 * [rtabmap_ros](https://wiki.ros.org/rtabmap_ros).
 
@@ -42,7 +44,7 @@ Use the following command to start the testing program:
 
 `roslaunch uvc_robot driver.launch`
 
-It will launch the serial controller node connected to the Arduino, the odometry node and the joint state publisher. If this step succeded you should see the side light of the robot going from a series of three quick blinks to a slow "breathing-like" type of blinking.
+It will launch the serial controller node connected to the Arduino, the odometry node and the joint state publisher.
 
 ### 3. Start the mapping
 In order to be able to map you have to use a launch file.
