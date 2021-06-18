@@ -14,6 +14,12 @@ UVC_Disinfecting_Robot is a differential drive robot with the motors placed on t
 ### Schematics
 
 
+
+### Flowchart
+
+![Untitled Diagram(2)](https://user-images.githubusercontent.com/66640498/122596878-d09d1b80-d06a-11eb-817a-0f1152b83495.png)
+
+
 ### ROS packages
 * #### uvc_robot:
 This package includes all the robot files that are needed to setup the robot. The package includes several launch files used to test the robot, start the mapping and begining the navigation. The launch file "urdf.launch" launches the joint and robot state publisher as well as RViz to display the model.
