@@ -62,7 +62,9 @@ It will launch the map server to save the map files (map1.pgm and the yaml file)
 
 ## Authors
 
-* **Marwan Hesham** - *Initial work*
+* **Marwan Hesham** 
+* **Omar Atef** 
+* **Abdulrahman Atef** 
 
 ## License
 
