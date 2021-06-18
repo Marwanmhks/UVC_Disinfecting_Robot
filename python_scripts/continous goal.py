@@ -9,7 +9,7 @@ from move_base_seq_ros.msg import SequenceArray
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 
 # Initializing ROS node
-rospy.init_node("apriltag_move_base_goal")
+rospy.init_node("bfs_move_base_goal")
 client = actionlib.SimpleActionClient('move_base',MoveBaseAction)
 goal = MoveBaseGoal()
 
