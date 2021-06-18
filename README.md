@@ -29,14 +29,15 @@ The arduino subscribes to "cmd_vel" node and receives the command order from the
 The software for the UVC_Disinfecting_Robot project was developped with ROS Melodic and Ubuntu 18.04. More recent versions should work as well but might require some tweaking.
 
 #### To use Nox you will need the following packages (most of them should already be installed by default or requested when building the UVC_Disinfecting_Robot packages):
-* The [navigation stack](https://wiki.ros.org/navigation)
-* The freenect package (for connecting to the Kinect)(https://github.com/reachpranjal/install-kinect-in-jetson-nano)
-* [RViz](http://wiki.ros.org/rviz)
-* [TF Publisher](http://wiki.ros.org/tf) 
-* [Joint State Publisher](http://wiki.ros.org/joint_state_publisher) 
-* [Robot State Publisher](http://wiki.ros.org/robot_state_publisher) 
-* [ROSSerial package](http://wiki.ros.org/rosserial) (for connecting to the Arduino Mega)
+* The [navigation stack](https://wiki.ros.org/navigation).
+* The freenect package (for connecting to the Kinect)(https://github.com/reachpranjal/install-kinect-in-jetson-nano).
+* [RViz](http://wiki.ros.org/rviz).
+* [TF Publisher](http://wiki.ros.org/tf).
+* [Joint State Publisher](http://wiki.ros.org/joint_state_publisher). 
+* [Robot State Publisher](http://wiki.ros.org/robot_state_publisher).
+* [ROSSerial package](http://wiki.ros.org/rosserial) (for connecting to the Arduino Mega).
 * [rtabmap_ros](https://wiki.ros.org/rtabmap_ros).
+* [jetson-inference](https://github.com/dusty-nv/jetson-inference).
 
 ## Running UVC_Disinfecting_Robot
 
