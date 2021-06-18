@@ -67,8 +67,3 @@ It will launch the map server to save the map files (map1.pgm and the yaml file)
 * **Marwan Hesham** 
 * **Omar Atef** 
 * **Abdulrahman Atef** 
-
-## License
-
-This project is licensed under the GNU General Public License version 3
-
