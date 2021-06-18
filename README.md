@@ -11,13 +11,10 @@ In its current state the robot uses SLAM (RTABMap) to create a map of its surrou
 
 ## UVC_Disinfecting_Robot Characteristics
 UVC_Disinfecting_Robot is a differential drive robot with the motors placed on the same axis. The base is made of clear acrylic and metal brackets with one caster wheel for support.
-### Schematics
-
-
 
 ### Flowchart
 
-![Untitled Diagram(2)](https://user-images.githubusercontent.com/66640498/122596878-d09d1b80-d06a-11eb-817a-0f1152b83495.png)
+![Flowchart](https://user-images.githubusercontent.com/66640498/122597906-5c637780-d06c-11eb-80db-7e77a4a3c1c7.PNG)
 
 
 ### ROS packages
