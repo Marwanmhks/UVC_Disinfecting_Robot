@@ -1,5 +1,10 @@
+![Overal_Assembly_final](https://user-images.githubusercontent.com/66640498/122592372-77ca8480-d064-11eb-92e4-73c81285a090.png)
+
 # UVC_Disinfecting_Robot
 UVC_Disinfecting_Robot uses SLAM (ROS) with a Kinect to navigate in its environment. It is powered by ROS running on a Jetson Nano and an Arduino Mega that controls two motors with encoders.
+
+![Final Build 1](https://user-images.githubusercontent.com/66640498/122592402-831db000-d064-11eb-8259-1b3da87b9ee6.JPG)
+![Final Build 2](https://user-images.githubusercontent.com/66640498/122592425-8add5480-d064-11eb-9f4d-f62cdabb0d76.jpg)
 
 
 In its current state the robot can use SLAM (RTABMap) to create a map of its surroundings (using the Kinect depth perception and converting it into a laserscan type message to detect wall and obstacles) and localize itself within the map. It plans a path multiple goals to achieve autonomous navigation with obstacle avoidance and human detection features.
