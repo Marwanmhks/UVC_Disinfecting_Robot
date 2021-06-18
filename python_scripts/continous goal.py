@@ -35,15 +35,15 @@ def detection_callback(detected_array):
                 client.send_goal(goal)
                 client.wait_for_result()
         else:
-            rospy.logwarn("No april tag observed, goal undefined.")
+            rospy.logwarn("Error, goal undefined.")
     except (tf.ExtrapolationException, tf.LookupException):
         None
 
 # Initializing ROS publisher and subscriber
 goal_pub = rospy.Publisher("move_base_simple/goal", PoseStamped, queue_size=1)
-rospy.Subscriber("tag_detections", SequenceArray, detection_callback)
+rospy.Subscriber("map_detections", SequenceArray, detection_callback)
 
-rospy.loginfo("apriltag to move_base node started.")
+rospy.loginfo("bfs to move_base node started.")
 
 # Empty loop
 while not rospy.is_shutdown():
