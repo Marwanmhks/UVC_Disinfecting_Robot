@@ -7,7 +7,7 @@ UVC_Disinfecting_Robot uses SLAM (ROS) with a Kinect to navigate in its environm
 ![Final Build 2](https://user-images.githubusercontent.com/66640498/122592425-8add5480-d064-11eb-9f4d-f62cdabb0d76.jpg)
 
 
-In its current state the robot can use SLAM (RTABMap) to create a map of its surroundings (using the Kinect depth perception and converting it into a laserscan type message to detect wall and obstacles) and localize itself within the map. It plans a path multiple goals to achieve autonomous navigation with obstacle avoidance and human detection features.
+In its current state the robot uses SLAM (RTABMap) to create a map of its surroundings (using the Kinect depth perception and converting it into a laserscan type message to detect wall and obstacles) and localize itself within the map. It plans a path multiple goals to achieve autonomous navigation with obstacle avoidance and human detection features.
 
 ## UVC_Disinfecting_Robot Characteristics
 UVC_Disinfecting_Robot is a differential drive robot with the motors placed on the same axis. The base is made of clear acrylic and metal brackets with one caster wheel for support.
@@ -29,8 +29,8 @@ The arduino subscribes to "cmd_vel" node and receives the command order from the
 The software for the UVC_Disinfecting_Robot project was developped with ROS Melodic and Ubuntu 18.04. More recent versions should work as well but might require some tweaking.
 
 #### To use Nox you will need the following packages (most of them should already be installed by default or requested when building the UVC_Disinfecting_Robot packages):
-* The [navigation stack](https://wiki.ros.org/navigation),
-* The freenect package (for connecting to the Kinect)
+* The [navigation stack](https://wiki.ros.org/navigation)
+* The freenect package (for connecting to the Kinect)(https://github.com/reachpranjal/install-kinect-in-jetson-nano)
 * [RViz](http://wiki.ros.org/rviz)
 * [TF Publisher](http://wiki.ros.org/tf) 
 * [Joint State Publisher](http://wiki.ros.org/joint_state_publisher) 
@@ -66,6 +66,12 @@ Use the following command to start the main program:
 It will launch the map server to save the map files (map1.pgm and the yaml file), the navigation stack - (acml.launch, move_base.launch), the cmd_vel mux and RViz.
 
 ##Voila 
+
+## Future Improvements
+
+* Addition of imu for a more accurate position by sensor fusion.
+* Implementation of the continous move base goal script, by adding the BFS script to publish move base sequence goals to move_base_msg/seq.
+* Using a slightly lighter slam algorithm such as gmapping by using a 2D Lidar for more accurate mapping.
 
 ## Authors
 
