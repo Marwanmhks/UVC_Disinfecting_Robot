@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="uvc_robot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00241248593055055 -0.00445381846492179 0.21144900187448"
+        rpy="0 0 0" />
+      <mass
+        value="11.4280367814686" />
+      <inertia
+        ixx="0.182172266196687"
+        ixy="-0.00038888639424007"
+        ixz="0.000144418398704185"
+        iyy="0.176671114005378"
+        iyz="-4.59187018700196E-05"
+        izz="0.122918657382842" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://uvc_robot_detailed_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://uvc_robot_detailed_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_wheel">
+    <inertial>
+      <origin
+        xyz="8.7649354441055E-09 -0.00997993671802441 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.166339919940139" />
+      <inertia
+        ixx="0.000101688927956429"
+        ixy="-5.99217070388686E-11"
+        ixz="1.02384751853912E-21"
+        iyy="0.000169917022931273"
+        iyz="2.00388360795128E-21"
+        izz="0.000101688927956377" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://uvc_robot_detailed_description/meshes/left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://uvc_robot_detailed_description/meshes/left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_joint"
+    type="continuous">
+    <origin
+      xyz="-0.084764 0.14591 0.0155"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_wheel">
+    <inertial>
+      <origin
+        xyz="-8.7649353330832E-09 0.00997993671802444 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.166339919940139" />
+      <inertia
+        ixx="0.000101688927956429"
+        ixy="-5.99217070341858E-11"
+        ixz="3.56666708735343E-21"
+        iyy="0.000169917022931273"
+        iyz="-4.05548364010479E-21"
+        izz="0.000101688927956377" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://uvc_robot_detailed_description/meshes/right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://uvc_robot_detailed_description/meshes/right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_joint"
+    type="continuous">
+    <origin
+      xyz="-0.084764 -0.14609 0.0155"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+  </joint>
+  <link
+    name="caster_wheel">
+    <inertial>
+      <origin
+        xyz="0 -3.46944695195361E-18 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0328820031075732" />
+      <inertia
+        ixx="1.31528012430293E-06"
+        ixy="-7.87848134036453E-23"
+        ixz="5.22254132630542E-23"
+        iyy="1.31528012430293E-06"
+        iyz="-4.4156881248831E-23"
+        izz="1.31528012430293E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://uvc_robot_detailed_description/meshes/caster_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.741176470588235 0.733333333333333 0.725490196078431 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://uvc_robot_detailed_description/meshes/caster_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_joint"
+    type="continuous">
+    <origin
+      xyz="0.095236 -9.1106E-05 -0.02"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="caster_wheel" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+  </joint>
+  <gazebo>
+  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+    <leftJoint>left_joint</leftJoint>
+    <rightJoint>right_joint</rightJoint>
+    <wheelSeparation>0.272</wheelSeparation>
+    <wheelDiameter>0.085</wheelDiameter>
+    <wheelAcceleration>1.0</wheelAcceleration>
+    <wheelTorque>20</wheelTorque>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <robotBaseFrame>base_footprint</robotBaseFrame>
+    <odometrySource>1</odometrySource>
+    <publishWheelTF>true</publishWheelTF>
+    <publishOdom>true</publishOdom>
+    <publishWheelJointState>true</publishWheelJointState>
+    <legacyMode>false</legacyMode>
+  </plugin>
+</gazebo>
+</robot>

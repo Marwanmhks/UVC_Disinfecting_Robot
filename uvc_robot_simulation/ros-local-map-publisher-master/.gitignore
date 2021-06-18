@@ -1,0 +1,6 @@
+devel/
+build/
+.catkin_workspace
+auto-gitpush.sh
+.vscode
+src/CMakeLists.txt

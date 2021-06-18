@@ -1,0 +1,18 @@
+
+<launch>
+<rosparam>
+mobile_base_controller:
+  enable_odom_tf: true
+  odom_frame_id: odom
+  publish_cmd: true
+  type: diff_drive_controller/DiffDriveController
+  left_wheel: wheel_0_joint
+  right_wheel: wheel_1_joint
+      </rosparam>
+      
+      <node name="base_controller_spawner"  pkg="controller_manager"  type="spawner"  output="screen"  args="mobile_base_controller" />
+      
+      
+      
+      
+</launch>
